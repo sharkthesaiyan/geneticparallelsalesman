@@ -1,0 +1,9 @@
+Compilation: see makefile. Requires mpif90.
+
+Running: mpirun -np x ./salesman input_file_name number_of_cycles number_of_generations_per_cycle
+Where x is the number of processes. 
+
+X should be at least 2 as this computes nothing with just one process. 
+
+Input files should be in the same folder as the program or should be referred with
+its location (for example: ../run/input1.dat).

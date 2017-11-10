@@ -1,0 +1,13 @@
+Output files name decoding:
+
+  input1.dat   cmd_argument_2
+           |    |
+     output1_2_300_10.dat
+             |      |
+         -np 2  cmd_argument_3
+         
+ie. mpirun -np 2 input1.dat 300 10 > output1_2_300_10.dat
+
+would produce this file if input1.dat was in the directory of the
+program. Program doesn't produce output files so you have to
+use linux > like above.
